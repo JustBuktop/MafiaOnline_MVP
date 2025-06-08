@@ -1,0 +1,79 @@
+#main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left-panel {
+    flex-direction: column;
+    gap: 12px;
+}
+
+#right-panel {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#lobby-panel {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    width: 300px;
+    background-color: rgba(30,30,30,0.95);
+    padding: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+}
+
+
+#lobby-list {
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lang-switch {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.MainMenuStyle {
+}
+.steam-info {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+#steam-avatar {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+#steam-name {
+    color: white;
+    unity-font-style: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 6px;
+}
+

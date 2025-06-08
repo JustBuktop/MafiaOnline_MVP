@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="project://database/Assets/UI/LobbyScreen.uss?fileID=7433441132597879392&amp;guid=a2366c96d86eb15489fb845f12beff68&amp;type=3#LobbyScreen" />
+    <ui:VisualElement name="lobby-root" class="lobby-root">
+        <ui:VisualElement class="lobby-top-bar">
+            <ui:Button name="back-button" text="Назад" />
+            <ui:Label name="lobby-code-label" text="Код лобби: XXXX" class="lobby-code" />
+        </ui:VisualElement>
+        <ui:ScrollView name="player-grid" mode="Vertical" class="player-grid" />
+        <ui:VisualElement class="lobby-controls">
+            <ui:Button name="ready-button" text="Готов" class="control-button" />
+            <ui:Button name="start-button" text="Начать игру" class="control-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="role-list" class="role-list">
+            <ui:Label text="Роли в игре:" class="roles-title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="chat-panel" class="chat-panel">
+            <ui:ScrollView name="chat-messages" mode="Vertical" class="chat-messages" />
+            <ui:TextField name="chat-input" class="chat-input" />
+            <ui:Button name="send-button" text="Отправить" class="chat-send" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

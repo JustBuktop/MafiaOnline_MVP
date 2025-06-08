@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/SettingsStyle.uss?fileID=7433441132597879392&amp;guid=77f1280385df6e948b52dbcdf80f7812&amp;type=3#SettingsStyle" />
+    <ui:ScrollView name="settings-container" class="settings-panel" style="display: none;">
+        <ui:Label text="Настройки" class="title" />
+        <ui:Label text="Громкость" />
+        <ui:Slider name="volume-slider" />
+        <ui:Label text="Разрешение" />
+        <ui:DropdownField name="resolution-dropdown" />
+        <ui:Label text="Режим окна" />
+        <ui:DropdownField name="window-mode-dropdown" />
+        <ui:Label text="Микрофон" />
+        <ui:DropdownField name="microphone-dropdown" />
+        <ui:Toggle name="mic-monitor-toggle" text="Прослушивать микрофон" />
+        <ui:Label text="Уровень микрофона" />
+        <ui:ProgressBar name="mic-level" high-value="1" />
+        <ui:Label text="Камера" />
+        <ui:DropdownField name="camera-dropdown" />
+        <ui:Toggle name="camera-preview-toggle" text="Предпросмотр камеры" />
+        <ui:Button name="back-setting-button" text="Назад" />
+    </ui:ScrollView>
+</ui:UXML>

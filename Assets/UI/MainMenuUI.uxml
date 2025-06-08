@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=f7d90b62f15d12a4eb1fa8794c5d52fa&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="main-container" class="MainMenuStyle" style="flex-grow: 1; flex-direction: row; align-items: flex-start; width: auto; height: auto;">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1; align-items: flex-start;">
+            <ui:Button text="Создать Игру" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create-button" />
+            <ui:Button text="Присоединиться" parse-escape-sequences="true" display-tooltip-when-elided="true" name="join-button" />
+            <ui:Button text="Настройки" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-button" />
+            <ui:Button text="Выход" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1;" />
+        <ui:VisualElement name="lang-switch" style="flex-grow: 1;">
+            <ui:Button text="RU" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ru-button" />
+            <ui:Button text="EN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="en-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="steam-info" class="steam-container">
+            <ui:VisualElement name="steam-avatar" />
+            <ui:Label name="steam-name" text="   " />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="lobby-panel" style="flex-grow: 1; display: none;">
+        <ui:Label tabindex="-1" text="Доступные лобби" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="lobby-list" style="display: flex;" />
+        <ui:Button text="Создать лобби" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create-lobby-button" />
+        <ui:Button text="Обновить список" parse-escape-sequences="true" display-tooltip-when-elided="true" name="refresh-button" />
+        <ui:Button text="Назад" parse-escape-sequences="true" display-tooltip-when-elided="true" name="back-button" />
+    </ui:VisualElement>
+</ui:UXML>
